@@ -12,8 +12,15 @@ function getVariableforAllPoses(newResult){
   for(let i=0; i<newResult.length; i++){
     let allPoses = newResult[i].english_name;
     console.log(allPoses);
-  }
 
+  $('.select-dropdown').append(
+    `
+    <option class="dropdown-style" value="${allPoses}">
+      ${allPoses}
+    </option>
+    `)
+
+}
 }
 
 
