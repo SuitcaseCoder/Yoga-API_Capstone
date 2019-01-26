@@ -18,10 +18,11 @@ function fetchYogaApiAgain(){
     console.log(error))
 }
 
-function getVariableforAllPoses(newResult){
+function getVariableforAllPoses(newResult,valueSelected){
   for(let i=0; i<newResult.length; i++){
     let allPoses = newResult[i].english_name;
     console.log(allPoses);
+
 
   $('.select-dropdown').append(
     `
@@ -30,20 +31,30 @@ function getVariableforAllPoses(newResult){
     </option>
     `)
 
+    if(allPoses === newResult[i].english_name){
+      console.log(newResult[i].sanskrit_name);
+    } else {
+      console.log("nope you're wrong");
+    }
+
+
 }
 }
 
-function submitButton(){
+function submitButton(newResult){
   $('.dropdown-form').submit(event => {
     event.preventDefault();
 
     let valueSelected = $('.dropdown-style:selected').val();
     console.log(valueSelected);
 
+    //how to move "backward " in an array and get the key value from selected value?
     //loop through the object using valueSelected ?
+    //get value from
 
 })
 }
+
 
 
 
