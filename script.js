@@ -23,6 +23,7 @@ function getVariableforAllPoses(newResult,valueSelected){
     let allPoses = newResult[i].english_name;
     console.log(allPoses);
 
+     let valueSelected = $('.dropdown-style:selected').val();
 
   $('.select-dropdown').append(
     `
@@ -32,9 +33,13 @@ function getVariableforAllPoses(newResult,valueSelected){
     `)
 
     if(allPoses === newResult[i].english_name){
-      console.log(newResult[i].sanskrit_name);
+      let sanskritName = newResult[i].sanskrit_name;
+      console.log(sanskritName);
+      console.log(valueSelected);
+
     } else {
       console.log("nope you're wrong");
+      let
     }
 
 
@@ -46,18 +51,16 @@ function submitButton(newResult){
     event.preventDefault();
 
     let valueSelected = $('.dropdown-style:selected').val();
-    console.log(valueSelected);
+    alert(valueSelected);
 
-    //how to move "backward " in an array and get the key value from selected value?
-    //loop through the object using valueSelected ?
-    //get value from
 
 })
 }
 
 
 
-
+//how do I make either valueSelected accessible in all functions
+//or how do I make sanskritName accessible in all functions
 
 
 
