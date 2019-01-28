@@ -34,7 +34,9 @@ function getVariableforAllPoses(newResult,valueSelected){
 
     if(allPoses === newResult[i].english_name){
       let sanskritName = newResult[i].sanskrit_name;
+      let poseImage = newResult[i].img_url;
       console.log(sanskritName);
+      console.log(poseImage);
       console.log(valueSelected);
 
     } else {
@@ -46,12 +48,21 @@ function getVariableforAllPoses(newResult,valueSelected){
 }
 }
 
-function submitButton(newResult){
+function submitButton(newResult, sanskritName, poseImage){
   $('.dropdown-form').submit(event => {
     event.preventDefault();
 
     let valueSelected = $('.dropdown-style:selected').val();
     alert(valueSelected);
+
+    $('.results').empty();
+    $('.results').append(`
+        <h2>Sanskrit Name</h2>
+        <p>${sanskritName}</p>
+        <img src="${poseImage}"></img>
+
+      `)
+    console.log(sanskritName);
 
 
 })
