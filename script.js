@@ -13,11 +13,10 @@ function listOfAllYogaPoses(){
 }
 
 function callYoutubeAPI(valueSelected){
-  fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=how+to+do+${valueSelected}+yoga+pose&maxResults=1&key=${youtube_Key}`)
+  fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=how+to+do+${valueSelected}+yoga+pose&maxResults=1&&safeSearch=moderate&key=${youtube_Key}`)
   .then(youtubeResult =>
     youtubeResult.json())
   .then(youtubeResult => {
-    console.log(youtubeResult);
     displayOtherResults(youtubeResult.items[0]);
   })
   .catch(error =>
@@ -25,25 +24,17 @@ function callYoutubeAPI(valueSelected){
 }
 
 function getVariableforAllPoses(newResult){
-
-  console.log(newResult);
   for(let i=0; i<newResult.length; i++){
     let allPoses = newResult[i].english_name;
-    console.log(allPoses);
-
-  $('.select-dropdown').append(
-    `
-    <option class="dropdown-style" value="${allPoses}">
-      ${allPoses}
-    </option>
-    `)
-
+    $('.select-dropdown').append(
+      `
+      <option class="dropdown-style" value="${allPoses}">
+        ${allPoses}
+      </option>
+      `)
     if(allPoses === newResult[i].english_name){
       let sanskritName = newResult[i].sanskrit_name;
       let poseImage = newResult[i].img_url;
-      console.log(sanskritName);
-      console.log(poseImage);
-
     }
   }
   submitButton(newResult);
@@ -58,23 +49,18 @@ function submitButton(newResult){
     for(let i=0; i<newResult.length; i++){
       if(valueSelected === newResult[i].english_name){
         let objectSelected = newResult[i];
-        console.log(newResult[i]);
         displayResults(objectSelected);
-        // displayOtherResults();
       }
     }
   });
-  // callYoutubeAPI();
 }
 
 function displayResults(objectSelected){
-
   $('.results').empty();
   $('.results').append(`
       <h2>Sanskrit Name</h2>
       <p>${objectSelected.sanskrit_name}</p>
       <img src="${objectSelected.img_url}"></img>
-
     `)
 }
 
@@ -88,7 +74,6 @@ function displayOtherResults(video){
 
 function init() {
 	listOfAllYogaPoses();
-
 }
 
 $(init); //document on ready
