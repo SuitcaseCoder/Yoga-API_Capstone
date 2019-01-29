@@ -59,7 +59,8 @@ function displayResults(objectSelected){
   $('.results').empty();
   $('.results').append(`
       <h2>Sanskrit Name</h2>
-      <p>${objectSelected.sanskrit_name}</p>
+      <div id="p-div"><p>${objectSelected.sanskrit_name}</p></div>
+      <h2>Example</h2>
       <img src="${objectSelected.img_url}"></img>
     `)
 }

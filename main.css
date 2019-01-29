@@ -18,47 +18,116 @@ title {
 }
 
 .header-background{
-  height: 100px;
+  height: 30px;
   background-color: #c7523e;
+  padding: 10px;
+  border-bottom: 1px solid #ffb397;
 }
 
 h1 {
-  font-family: 'Lalezar', sans-serif;
-  font-size: 55px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
   color: #a2f3f7
+
 }
 
 body {
   background-color: #ff8269;
 }
 
+label h2 {
+  background-color: white;
+  letter-spacing: 2px;
+}
+
+#app-explanation {
+  width: 35%;
+  background-color: #d6ffff;
+  color: #c7523e;
+  border-radius: 13px;
+  font-family: Montserrat;
+  font-size: 16px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  text-align: justify;
+  padding: 10px 15px;
+  box-shadow: 3px -3px 2px #ffb397;
+  line-height: 150%;
+}
+
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Anton', sans-serif;
   background-color: #ffb397;
   padding: 25px;
   font-size: 42px;
+  color: #c7523e;
+  letter-spacing: 2px;
 }
 
+
+
 .select-dropdown {
-  font-size: 14px;
+  font-size: 20px;
   background-color: white;
   margin-top: 50px;
   margin-bottom: 25px;
+  width: 15%;
+  border: 1px solid white;
+
 }
 
-.dropdown-style {
-  text-align: center;
+.select-dropdown:hover {
+  background-color: #ffb397;
+  font-size: 25px;
+  color: white;
 }
+
 
 button {
   background-color: #a2f3f7;
-  padding: 15px 20px;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 23px;
+  margin-bottom: 20px;
+  width: 12%;
+  color: #c7523e;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+button:hover {
+  background-color:#70c0c4;
+  border:2px solid #d6ffff;
+  letter-spacing: 3px;
+  font-size: 28px;
+}
+
+
+#p-div{
+  background-color: #d6ffff;
+  margin-top: 50px;
+  padding: 25px;
   border-radius: 50px;
   font-size: 18px;
-  margin-bottom: 20px;
-
+  margin-bottom: 50px;
+  width: 20%;
 }
+
+
+
+p {
+  font-size: 36px;
+}
+
+
 img {
   max-width: 200px;
   height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+iframe{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
