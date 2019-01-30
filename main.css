@@ -28,31 +28,18 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #a2f3f7
-
 }
 
 body {
   background-color: #ff8269;
 }
 
-label h2 {
-  background-color: white;
-  letter-spacing: 2px;
-}
-
-#app-explanation {
-  width: 35%;
-  background-color: #d6ffff;
-  color: #c7523e;
-  border-radius: 13px;
-  font-family: Montserrat;
-  font-size: 16px;
-  margin-top: 50px;
-  text-transform: uppercase;
-  text-align: justify;
-  padding: 10px 15px;
-  box-shadow: 3px -3px 2px #ffb397;
-  line-height: 150%;
+.img-container {
+  background-image: url('https://images.unsplash.com/photo-1536658262235-598521539171?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  height: 600px;
+  background-position: center;
+  background-size: contain;
 }
 
 h2 {
@@ -64,8 +51,6 @@ h2 {
   letter-spacing: 2px;
 }
 
-
-
 .select-dropdown {
   font-size: 20px;
   background-color: white;
@@ -73,15 +58,15 @@ h2 {
   margin-bottom: 25px;
   width: 15%;
   border: 1px solid white;
-
+  box-shadow: 2px -2px 1px white;
 }
 
 .select-dropdown:hover {
   background-color: #ffb397;
   font-size: 25px;
   color: white;
+  box-shadow: 2px -2px 1px #ffb397;
 }
-
 
 button {
   background-color: #a2f3f7;
@@ -102,25 +87,11 @@ button:hover {
   font-size: 28px;
 }
 
-
-#p-div{
-  background-color: #d6ffff;
-  margin-top: 50px;
-  padding: 25px;
-  border-radius: 50px;
-  font-size: 18px;
-  margin-bottom: 50px;
-  width: 20%;
-}
-
-
-
 p {
   font-size: 36px;
 }
 
-
-img {
+#pose-img {
   max-width: 200px;
   height: auto;
   margin-top: 50px;

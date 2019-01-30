@@ -61,7 +61,7 @@ function displayResults(objectSelected){
       <h2>Sanskrit Name</h2>
       <div id="p-div"><p>${objectSelected.sanskrit_name}</p></div>
       <h2>Example</h2>
-      <img src="${objectSelected.img_url}"></img>
+      <img id="pose-img" src="${objectSelected.img_url}"></img>
     `)
 }
 
