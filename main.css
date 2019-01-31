@@ -13,79 +13,152 @@ secondary #a2f3f7
 light-secondary #d6ffff
 dark-secondary #70c0c4 */
 
+body {
+    background-color: #ef6191;
+    background-image: url('https://static1.squarespace.com/static/503264b0e4b0dbdecd41e3f6/t/590a05131e5b6ce08768b593/1541704992538/polaroid2.png?format=1000w');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
 title {
   display: none;
 }
 
-.header-background{
-  height: 30px;
-  background-color: #c7523e;
-  padding: 10px;
-  border-bottom: 1px solid #ffb397;
+h1.tiny {
+  font-size: 16px;
+  color: #b0bec5;
+  letter-spacing: .2rem;
 }
 
-h1 {
+.header-background{
+  background-color: #546e7a;
+  padding: 10px;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #a2f3f7
-}
+} */
 
-body {
-  background-color: #ff8269;
-}
-
-.img-container {
+/* .img-container {
   background-image: url('https://images.unsplash.com/photo-1536658262235-598521539171?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
   background-repeat: no-repeat;
   height: 600px;
   background-position: center;
   background-size: contain;
+} */
+
+.light{
+  background-color: white;
+}
+h2.project_title, .project_title > span {
+  font-size: 5rem;
+  color: #819ca9;
+  opacity: .8;
+  font-family: 'Trocchi', serif;
+  letter-spacing: 25px;
+  display: inline-block;
 }
 
-h2 {
+.project_title > span {
+  color: #819ca9;
+  opacity: 1;
+  font-size: 6rem;
+  letter-spacing: 20px;
+}
+
+span.inner {
+  color: #ef6090;
+}
+
+/* h2 {
   font-family: 'Anton', sans-serif;
   background-color: #ffb397;
   padding: 25px;
   font-size: 42px;
   color: #c7523e;
   letter-spacing: 2px;
+} */
+
+
+#app-explanation{
+    width: 60%;
+    font-size: 16px;
+    padding: 10px 15px;
 }
 
-.select-dropdown {
-  font-size: 20px;
-  background-color: white;
-  margin-top: 50px;
-  margin-bottom: 25px;
-  width: 15%;
-  border: 1px solid white;
-  box-shadow: 2px -2px 1px white;
+h1.headline {
+  font-family: 'Montserrat', sans-serif;
+  color: #b0bec5;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  margin-bottom: 1rem;
+}
+
+p.intro {
+  line-height: 1.75rem;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  padding: 10px 15px;
+  color: white;
+}
+
+span.promise {
+  color: #b0bec5;
+  font-size: 22px;
+  font-family: 'Trocchi', serif;
+  letter-spacing: 2px;
+  font-weight: 900;
+  padding: 2rem;
+}
+
+.happy_shadow {
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
 }
 
 .select-dropdown:hover {
-  background-color: #ffb397;
-  font-size: 25px;
+  background-color: #546d79;
   color: white;
-  box-shadow: 2px -2px 1px #ffb397;
+  transition: background-color 0.5s ease;
 }
 
-button {
-  background-color: #a2f3f7;
-  padding: 15px;
-  border-radius: 50px;
-  font-size: 23px;
-  margin-bottom: 20px;
-  width: 12%;
-  color: #c7523e;
+.select-dropdown {
+  font-size: 15px;
+  background-color: white;
+  margin-top: 0;
+  margin-bottom: 25px;
+  width: 16%;
+  height: 38px;
   text-transform: uppercase;
-  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #009faf;
 }
 
 button:hover {
-  background-color:#70c0c4;
-  border:2px solid #d6ffff;
-  letter-spacing: 3px;
-  font-size: 28px;
+  background-color:#009faf;
+  color: white;
+  transition: background-color 0.5s ease;
 }
+
+button {
+  text-align: center;
+  font-size: 15px;
+  background-color: #70c0c4;
+  margin-bottom: 25px;
+  width: 16%;
+  height: 38px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
 
 p {
   font-size: 36px;
