@@ -28,7 +28,7 @@ function getVariableforAllPoses(newResult){
     let allPoses = newResult[i].english_name;
     $('.select-dropdown').append(
       `
-      <option class="dropdown-style" value="${allPoses}">
+      <option class="dropdown-style" id="move-dropdown" value="${allPoses}">
         ${allPoses}
       </option>
       `)
@@ -49,25 +49,46 @@ function submitButton(newResult){
     for(let i=0; i<newResult.length; i++){
       if(valueSelected === newResult[i].english_name){
         let objectSelected = newResult[i];
+        cssChanges();
         displayResults(objectSelected);
       }
     }
   });
 }
 
+function cssChanges(){
+  $('.light').hide();
+  $("#app-explanation").hide();
+  $('body').css('backgroundImage','none');
+  $('body').css({
+    'backgroundColor':'#ef6090',
+    'backgroundBlendMode':'multiply'
+  });
+  $('.select-dropdown').css({
+    'position':'absolute',
+    'top':'195px',
+    'left':'20%',
+    'transform':'translateX(-50%)'
+  });
+  $('.submit-button').css({
+    'position':'absolute',
+    'top':'245px',
+    'left':'20%',
+    'transform':'translateX(-50%)'
+  });
+
+}
+
 function displayResults(objectSelected){
   $('.results').empty();
   $('.results').append(`
-      <h2>Sanskrit Name</h2>
-      <div id="p-div"><p>${objectSelected.sanskrit_name}</p></div>
-      <h2>Example</h2>
+      <div id="sanskrit-div"><p>${objectSelected.sanskrit_name}</p></div>
       <img id="pose-img" src="${objectSelected.img_url}"></img>
     `)
 }
 
 function displayOtherResults(video){
   $('.results').append(`
-      <h2>How to video:</h2>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `)
 }

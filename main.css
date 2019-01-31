@@ -14,7 +14,7 @@ light-secondary #d6ffff
 dark-secondary #70c0c4 */
 
 body {
-    background-color: #ef6191;
+    background-color: #ef6090;
     background-image: url('https://static1.squarespace.com/static/503264b0e4b0dbdecd41e3f6/t/590a05131e5b6ce08768b593/1541704992538/polaroid2.png?format=1000w');
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,20 +36,6 @@ h1.tiny {
   padding: 10px;
   border-bottom: 2px solid #ffffff;
 }
-
-/* h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  color: #a2f3f7
-} */
-
-/* .img-container {
-  background-image: url('https://images.unsplash.com/photo-1536658262235-598521539171?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
-  background-repeat: no-repeat;
-  height: 600px;
-  background-position: center;
-  background-size: contain;
-} */
 
 .light{
   background-color: white;
@@ -138,6 +124,7 @@ span.promise {
   color: #009faf;
 }
 
+
 button:hover {
   background-color:#009faf;
   color: white;
@@ -160,18 +147,36 @@ button {
 }
 
 
-p {
-  font-size: 36px;
+#sanskrit-div  {
+  background-color: #546e7a;
+  padding: 10px;
+  border-bottom: 2px solid #ffffff;
+  background-color: white;
+}
+
+#sanskrit-div>p {
+  font-size: 5rem;
+  color: #819ca9;
+  opacity: .8;
+  font-family: 'Trocchi', serif;
+  letter-spacing: 25px;
+  display: inline-block;
 }
 
 #pose-img {
-  max-width: 200px;
+  max-width: 275px;
   height: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  float: left;
+  margin: 95px 0px 0px 95px;
 }
 
 iframe{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  float: right;
+  margin: 50px 75px 0px 0px;
+  /* padding: 75px; */
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
 }
