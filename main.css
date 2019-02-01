@@ -191,4 +191,7 @@ iframe{
   /* margin: 50px 75px 0px 0px; */
   /* padding: 75px; */
   box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  background-color: #70c0c4;
+  padding: 20px;
+  border-radius: 15px;
 }

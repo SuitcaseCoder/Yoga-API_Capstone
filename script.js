@@ -62,7 +62,7 @@ function cssChanges(){
   $('body').css('backgroundImage','url(' + 'https://images.unsplash.com/photo-1533046014110-cb971b8914d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' + ')');
   $('body').css({
     'backgroundColor':'#ef6090',
-    'backgroundBlendMode':'softLight',
+    'backgroundBlendMode':'saturation',
     'backgroundRepeat':'noRepeat',
     'backgroundSize':'cover'
   });
