@@ -4,6 +4,9 @@
   text-align: center;
 }
 
+head {
+  display: none;
+}
 /* colors
 primary #ff8269
 light-primary #ffb397
