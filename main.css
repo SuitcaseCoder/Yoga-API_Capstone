@@ -21,7 +21,7 @@ body {
     background-image: url('https://static1.squarespace.com/static/503264b0e4b0dbdecd41e3f6/t/590a05131e5b6ce08768b593/1541704992538/polaroid2.png?format=1000w');
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: multiply;
+    background-blend-mode: saturation;
 }
 
 title {
@@ -82,7 +82,7 @@ span.inner {
 
 h1.headline {
   font-family: 'Montserrat', sans-serif;
-  color: #b0bec5;
+  color: #70c0c4;
   text-transform: uppercase;
   letter-spacing: .2rem;
   margin-bottom: 1rem;
@@ -97,7 +97,7 @@ p.intro {
 }
 
 span.promise {
-  color: #b0bec5;
+  color: #70c0c4;
   font-size: 22px;
   font-family: 'Trocchi', serif;
   letter-spacing: 2px;
