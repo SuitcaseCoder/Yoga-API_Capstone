@@ -1,4 +1,4 @@
-var youtube_Key = "AIzaSyA5bV5bxQ59uapPb7iS2OFNfKaW1d6u4Ho";
+var youtube_Key = "AIzaSyBcY7xBC8qSNeUQv39-csOZ6sWqitZ1BJw";
 
 function listOfAllYogaPoses(){
   fetch('https://raw.githubusercontent.com/rebeccaestes/yoga_api/master/yoga_api.json')
@@ -59,36 +59,43 @@ function submitButton(newResult){
 function cssChanges(){
   $('.light').hide();
   $("#app-explanation").hide();
-  $('body').css('backgroundImage','none');
+  $('body').css('backgroundImage','url(' + 'https://images.unsplash.com/photo-1533046014110-cb971b8914d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' + ')');
   $('body').css({
     'backgroundColor':'#ef6090',
-    'backgroundBlendMode':'multiply'
+    'backgroundBlendMode':'softLight',
+    'backgroundRepeat':'noRepeat',
+    'backgroundSize':'cover'
   });
-  $('.select-dropdown').css({
-    'position':'absolute',
-    'top':'195px',
-    'left':'20%',
-    'transform':'translateX(-50%)'
-  });
-  $('.submit-button').css({
-    'position':'absolute',
-    'top':'245px',
-    'left':'20%',
-    'transform':'translateX(-50%)'
-  });
+  // $('.select-dropdown').css({
+  //   'position':'relative',
+  //   // 'top':'195px',
+  //   // 'left':'20%',
+  //   // 'transform':'translateX(-50%)'
+  // });
+  // $('.submit-button').css({
+  //   'position':'relative',
+  //   // 'top':'245px',
+  //   // 'left':'20%',
+  //   // 'transform':'translateX(-50%)'
+  // });
 
 }
 
 function displayResults(objectSelected){
   $('.results').empty();
   $('.results').append(`
+      <div class='position-rel'>
       <div id="sanskrit-div"><p>${objectSelected.sanskrit_name}</p></div>
+      </div>
+      <div class='results-inline'>
       <img id="pose-img" src="${objectSelected.img_url}"></img>
+      </div>
+
     `)
 }
 
 function displayOtherResults(video){
-  $('.results').append(`
+  $('.results-inline').append(`
       <iframe width="560" height="315" src="https://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `)
 }
