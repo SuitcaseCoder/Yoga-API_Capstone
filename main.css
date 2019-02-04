@@ -78,7 +78,7 @@ span.inner {
 
 
 #app-explanation{
-    width: 70%;
+    width: 40%;
     font-size: 16px;
     padding: 10px 15px;
     margin-top: 40px;
@@ -90,6 +90,10 @@ h1.headline {
   text-transform: uppercase;
   letter-spacing: .2rem;
   margin-bottom: 1rem;
+}
+
+.mobile-img {
+  display: none;
 }
 
 .intro-background {
@@ -226,11 +230,21 @@ footer {
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 60px;
+      color: #edc7b7;
+    }
+
+    h1.headline {
+      font-size: 60px;
     }
 
     h2 {
       font-size: 40px;
+      color: #123c69;
+    }
+
+    span.inner {
+      color: #bab2b5;
     }
 
     h1.headline, .promise {
@@ -242,16 +256,41 @@ footer {
     }
 
     body {
-      background-repeat: repeat;
+      background-image: none;
+      background-color: #eee2dc;
+    }
+
+    span.promise {
+      color: #edc7b7;
+    }
+
+    .select-dropdown {
+      font-size: 25px;
+      width: 40%;
+      height: 50px;
+    }
+
+    .submit-button {
+      font-size: 25px;
+      width: 40%;
+      height: 50px;
     }
 
     #app-explanation {
-      margin-top: 100px;
+      display: none;
     }
+
 
     .light {
       padding: 65px;
+      background-color: #edc7b7;
     }
+
+    .buttons-rel {
+      display: block;
+      padding: 50px;
+    }
+
 
     .results-inline {
       display: inline-flex;
@@ -259,6 +298,7 @@ footer {
       justify-content: center;
       flex-wrap: wrap;
     }
+
 
     #pose-img {
       margin-bottom: 25px;
