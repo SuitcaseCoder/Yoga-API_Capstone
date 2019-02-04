@@ -127,10 +127,7 @@ span.promise {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 100px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 30px;
+  margin: 75px 50px 30px 50px;
 }
 
 .buttons-rel {
@@ -158,6 +155,7 @@ span.promise {
   font-weight: 600;
   letter-spacing: 1px;
   color: #123c69;
+  padding-left: 25px;
 }
 
 
@@ -215,9 +213,6 @@ iframe{
   border-radius: 15px;
 }
 
-footer {
-  height: 100px;
-}
 
 /* Portrait */
 @media only screen
@@ -255,6 +250,12 @@ footer {
       font-size: 24px;
     }
 
+    p.intro {
+      margin: 50px;
+      padding: 50px;
+      text-align: justify;
+    }
+
     body {
       background-image: none;
       background-color: #eee2dc;
@@ -266,14 +267,14 @@ footer {
 
     .select-dropdown {
       font-size: 25px;
-      width: 40%;
-      height: 50px;
+      width: 50%;
+      height: 75px;
     }
 
     .submit-button {
       font-size: 25px;
-      width: 40%;
-      height: 50px;
+      width: 50%;
+      height: 75px;
     }
 
     #app-explanation {
@@ -288,7 +289,6 @@ footer {
 
     .buttons-rel {
       display: block;
-      padding: 50px;
     }
 
 
