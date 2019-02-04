@@ -59,25 +59,12 @@ function submitButton(newResult){
 function cssChanges(){
   $('.light').hide();
   $("#app-explanation").hide();
-  $('body').css('backgroundImage','url(' + 'https://images.unsplash.com/photo-1533046014110-cb971b8914d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' + ')');
+  $('body').css('backgroundImage','url(' + 'https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60' + ')');
   $('body').css({
-    'backgroundColor':'#ef6090',
-    'backgroundBlendMode':'saturation',
+    'backgroundColor':'rgba(0,0,0,0.4)',
     'backgroundRepeat':'noRepeat',
-    'backgroundSize':'cover'
+    'backgroundSize':'cover',
   });
-  // $('.select-dropdown').css({
-  //   'position':'relative',
-  //   // 'top':'195px',
-  //   // 'left':'20%',
-  //   // 'transform':'translateX(-50%)'
-  // });
-  // $('.submit-button').css({
-  //   'position':'relative',
-  //   // 'top':'245px',
-  //   // 'left':'20%',
-  //   // 'transform':'translateX(-50%)'
-  // });
 
 }
 

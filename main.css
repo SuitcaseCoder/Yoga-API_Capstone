@@ -17,11 +17,11 @@ light-secondary #d6ffff
 dark-secondary #70c0c4 */
 
 body {
-    background-color: #ef6090;
+    background-color: #eee2dc;
     background-image: url('https://static1.squarespace.com/static/503264b0e4b0dbdecd41e3f6/t/590a05131e5b6ce08768b593/1541704992538/polaroid2.png?format=1000w');
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: saturation;
+    background-blend-mode: lighten;
 }
 
 title {
@@ -35,18 +35,21 @@ h1.tiny {
 }
 
 .header-background{
-  background-color: #546e7a;
+  background-color: #ac3b61;
   padding: 10px;
-  border-bottom: 2px solid #ffffff;
-  border-top: 2px solid #819ca9;
+  /* border-bottom: 2px solid ; */
+  border-top: 1px solid #819ca9;
 }
 
 .light{
-  background-color: white;
+  background-color: #eee2dc;
+  padding: 15px;
+  border-bottom: 2px solid #bab2b5;
 }
+
 h2.project_title, .project_title > span {
   font-size: 5rem;
-  color: #819ca9;
+  color: dimgray;
   opacity: .8;
   font-family: 'Trocchi', serif;
   letter-spacing: 25px;
@@ -54,14 +57,14 @@ h2.project_title, .project_title > span {
 }
 
 .project_title > span {
-  color: #819ca9;
+  color: #dimgray;
   opacity: 1;
   font-size: 6rem;
   letter-spacing: 20px;
 }
 
 span.inner {
-  color: #ef6090;
+  color: #123c69;
 }
 
 /* h2 {
@@ -75,29 +78,36 @@ span.inner {
 
 
 #app-explanation{
-    width: 60%;
+    width: 70%;
     font-size: 16px;
     padding: 10px 15px;
+    margin-top: 40px;
 }
 
 h1.headline {
   font-family: 'Montserrat', sans-serif;
-  color: #70c0c4;
+  color: #ac3b61;
   text-transform: uppercase;
   letter-spacing: .2rem;
   margin-bottom: 1rem;
 }
 
+.intro-background {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  margin: 15px;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
 p.intro {
   line-height: 1.75rem;
   font-family: 'Montserrat';
   font-size: 16px;
   padding: 10px 15px;
-  color: white;
+  color: #123c69;
 }
 
 span.promise {
-  color: #70c0c4;
+  color: #ac3b61;
   font-size: 22px;
   font-family: 'Trocchi', serif;
   letter-spacing: 2px;
@@ -110,7 +120,17 @@ span.promise {
 }
 
 .results-inline {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+}
+
+.buttons-rel {
+  display: inline-flex;
 }
 
 .happy_shadow {
@@ -118,8 +138,8 @@ span.promise {
 }
 
 .select-dropdown:hover {
-  background-color: #546d79;
-  color: white;
+  background-color: #eee2dc;
+  color: #123c69;
   transition: background-color 0.5s ease;
 }
 
@@ -128,17 +148,17 @@ span.promise {
   background-color: white;
   margin-top: 0;
   margin-bottom: 25px;
-  width: 16%;
+  width: 30%;
   height: 38px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #009faf;
+  color: #123c69;
 }
 
 
 button:hover {
-  background-color:#009faf;
+  background-color:#123c51;
   color: white;
   transition: background-color 0.5s ease;
 }
@@ -146,9 +166,9 @@ button:hover {
 button {
   text-align: center;
   font-size: 15px;
-  background-color: #70c0c4;
+  background-color: #123c69;
   margin-bottom: 25px;
-  width: 16%;
+  width: 30%;
   height: 38px;
   text-transform: uppercase;
   font-weight: 600;
@@ -160,15 +180,14 @@ button {
 
 
 #sanskrit-div  {
-  background-color: #546e7a;
+  background-color: #eee2dc;
   padding: 10px;
   border-bottom: 2px solid #ffffff;
-  background-color: white;
 }
 
 #sanskrit-div>p {
   font-size: 5rem;
-  color: #819ca9;
+  color: #ac3b61;
   opacity: .8;
   font-family: 'Trocchi', serif;
   letter-spacing: 25px;
@@ -176,22 +195,82 @@ button {
 }
 
 #pose-img {
-  max-width: 250px;
+  min-width: 250px;
   height: auto;
-  /* margin-top: 50px;
-  margin-bottom: 50px; */
-  /* float: left; */
-  /* margin: 95px 0px 0px 95px; */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* margin: 25px; */
+  border-radius: 15px;
+  padding: 0px 140px;
 }
 
 iframe{
-  /* margin-top: 50px; */
-  margin-bottom: 50px;
-  float: right;
-  /* margin: 50px 75px 0px 0px; */
-  /* padding: 75px; */
+  margin: 5px;
   box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-  background-color: #70c0c4;
+  background-color: #123c69;
   padding: 20px;
   border-radius: 15px;
+}
+
+footer {
+  height: 100px;
+}
+
+/* Portrait */
+@media only screen
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    header {
+      display: none;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    h1.headline, .promise {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    body {
+      background-repeat: repeat;
+    }
+
+    #app-explanation {
+      margin-top: 100px;
+    }
+
+    .light {
+      padding: 65px;
+    }
+
+    .results-inline {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    #pose-img {
+      margin-bottom: 25px;
+    }
+
+    #sanskrit-div {
+      padding: 40px;
+    }
+
+    /* #pose-img {
+      padding: 50px;
+    } */
+
+
 }
