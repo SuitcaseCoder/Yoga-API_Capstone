@@ -136,7 +136,7 @@ span.promise {
   background-color: white;
   margin-top: 0;
   margin-bottom: 25px;
-  width: 30%;
+  width: 60%;
   height: 38px;
   text-transform: uppercase;
   font-weight: 600;
@@ -175,21 +175,21 @@ button {
 }
 
 #sanskrit-div>p {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #ac3b61;
   opacity: .8;
   font-family: 'Trocchi', serif;
-  letter-spacing: 25px;
+  letter-spacing: 18px;
   display: inline-block;
 }
 
 #pose-img {
-  min-width: 250px;
+  min-width: 200px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.5);
-  margin: 25px;
+  margin: 0 5px;
   border-radius: 15px;
-  padding: 0px 140px;
+  padding: 0px 75px;
 }
 
 iframe{
@@ -201,11 +201,13 @@ iframe{
 }
 
 
-/* Mobile - Response */
+/* Responsive */
+
 @media only screen
-  and (max-device-width: 667px)
+  and (max-device-width: 700px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+  and (orientation: portrait)
+   {
 
     header {
       display: none;
@@ -268,7 +270,7 @@ iframe{
       display: none;
     }
 
-    
+
 
 
     .light {
@@ -283,7 +285,7 @@ iframe{
 
     .results-inline {
       display: inline-flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       flex-wrap: wrap;
     }
