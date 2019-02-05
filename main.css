@@ -81,6 +81,7 @@ h1.headline {
 
 #intro-background {
   background-color: rgba(255, 255, 255, 0.4);
+  display: block;
   border-radius: 15px;
   max-width: 70%;
   margin: 0 auto;
@@ -93,6 +94,7 @@ p.intro {
   font-size: 16px;
   padding: 10px 15px;
   color: #123c69;
+  /* text-align: justify; */
 }
 
 span.promise {
@@ -238,7 +240,7 @@ iframe{
     p.intro {
       margin: 50px;
       padding: 50px;
-      text-align: justify;
+      text-align: center;
     }
 
     body {
@@ -265,6 +267,8 @@ iframe{
     #app-explanation {
       display: none;
     }
+
+    
 
 
     .light {

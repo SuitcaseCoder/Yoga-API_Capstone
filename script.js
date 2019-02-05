@@ -63,7 +63,7 @@ function submitButton(newResult){
 function cssChanges(){
   $('.light').hide();
   $("#app-explanation").hide();
-  $('.intro-background').hide();
+  $('#intro-background').hide();
   $('body').css('backgroundImage','url(' + 'https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60' + ')');
   $('body').css({
     'backgroundColor':'rgba(0,0,0,0.4)',
