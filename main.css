@@ -7,14 +7,6 @@
 head {
   display: none;
 }
-/* colors
-primary #ff8269
-light-primary #ffb397
-dark-primary #c7523e
-
-secondary #a2f3f7
-light-secondary #d6ffff
-dark-secondary #70c0c4 */
 
 body {
     background-color: #eee2dc;
@@ -67,16 +59,6 @@ span.inner {
   color: #123c69;
 }
 
-/* h2 {
-  font-family: 'Anton', sans-serif;
-  background-color: #ffb397;
-  padding: 25px;
-  font-size: 42px;
-  color: #c7523e;
-  letter-spacing: 2px;
-} */
-
-
 #app-explanation{
     width: 40%;
     font-size: 16px;
@@ -90,16 +72,19 @@ h1.headline {
   text-transform: uppercase;
   letter-spacing: .2rem;
   margin-bottom: 1rem;
+  max-width: 70%;
 }
 
 .mobile-img {
   display: none;
 }
 
-.intro-background {
+#intro-background {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 15px;
-  margin: 15px;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
   box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
 }
 p.intro {
@@ -200,7 +185,7 @@ button {
   min-width: 250px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.5);
-  /* margin: 25px; */
+  margin: 25px;
   border-radius: 15px;
   padding: 0px 140px;
 }
@@ -214,7 +199,7 @@ iframe{
 }
 
 
-/* Portrait */
+/* Mobile - Response */
 @media only screen
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
@@ -301,16 +286,16 @@ iframe{
 
 
     #pose-img {
-      margin-bottom: 25px;
+      margin-bottom: 100px;
+      height: 300px;
+    }
+
+    iframe {
+      margin-bottom: 50px;
     }
 
     #sanskrit-div {
       padding: 40px;
     }
-
-    /* #pose-img {
-      padding: 50px;
-    } */
-
 
 }

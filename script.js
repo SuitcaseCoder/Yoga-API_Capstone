@@ -1,5 +1,6 @@
 var youtube_Key = "AIzaSyBcY7xBC8qSNeUQv39-csOZ6sWqitZ1BJw";
 
+// ACCESS YOGA JSON API
 function listOfAllYogaPoses(){
   fetch('https://raw.githubusercontent.com/rebeccaestes/yoga_api/master/yoga_api.json')
   .then(result =>
@@ -12,6 +13,7 @@ function listOfAllYogaPoses(){
     console.log(error))
 }
 
+// ACCESS YOUTUBE API
 function callYoutubeAPI(valueSelected){
   fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=how+to+do+${valueSelected}+yoga+pose&maxResults=1&&safeSearch=moderate&key=${youtube_Key}`)
   .then(youtubeResult =>
@@ -23,6 +25,7 @@ function callYoutubeAPI(valueSelected){
     console.log(error))
 }
 
+// CREATE DROPDOWN MENU
 function getVariableforAllPoses(newResult){
   for(let i=0; i<newResult.length; i++){
     let allPoses = newResult[i].english_name;
@@ -40,7 +43,7 @@ function getVariableforAllPoses(newResult){
   submitButton(newResult);
 }
 
-
+// CTA BUTTON
 function submitButton(newResult){
   $('.dropdown-form').submit(event => {
     event.preventDefault();
@@ -56,6 +59,7 @@ function submitButton(newResult){
   });
 }
 
+//JQUERY CHANGES TO CSS
 function cssChanges(){
   $('.light').hide();
   $("#app-explanation").hide();
@@ -69,6 +73,7 @@ function cssChanges(){
 
 }
 
+//RESULTS DISPLAYED -YOGA
 function displayResults(objectSelected){
   $('.results').empty();
   $('.results').append(`
@@ -82,13 +87,14 @@ function displayResults(objectSelected){
     `)
 }
 
+//MORE RESULTS DISPLAYED -YOUTUBE
 function displayOtherResults(video){
   $('.results-inline').append(`
       <iframe width="560" height="315" src="https://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `)
 }
 
-
+//START HERE
 function init() {
 	listOfAllYogaPoses();
 }
