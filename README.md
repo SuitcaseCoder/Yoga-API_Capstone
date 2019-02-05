@@ -3,7 +3,7 @@
 My Thinkful Yoga API Capstone Project allows users to learn about some of the most common yoga poses.
 https://suitcasecoder.github.io/Yoga-API_Capstone/
 
-![Alt text](/Users/administrator/Documents/Thinkful_Projects/Yoga-API_Capstone/Screen Shot 2019-02-04 at 5.13.33 PM.png?raw=true "Title")
+![Alt text](https://github.com/SuitcaseCoder/Yoga-API_Capstone/blob/master/pics/landingPage.png?raw=true "Title")
 ## Motivation
 
 As a runner, yoga seemed too slow-paced, boring, and difficult-to-follow, however, I knew yoga is well-known for its many health benefits... especially for runners! Walking into a yoga studio for the first time can be very intimidating and may seem impossible... 'there's no way, I'll be able to literally bend over backward with my arms twisted like that... and what's it called? ...' That was the constant inner dialogue that ran through my mind during my first few yoga classes.
